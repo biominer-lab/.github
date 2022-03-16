@@ -1,7 +1,7 @@
 ## 数据管理规范
 
 ### [datahub](https://github.com/biominer-lab/datahub)
-Datahub仓库用于管理本组织收集整理的所有数据集的Metadata，及制定的字段规范文档等。
+Datahub仓库用于管理本组织收集整理的数据集的Metadata及制定的字段规范文档等。
 
 ```
 目录说明：
