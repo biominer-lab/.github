@@ -1,5 +1,3 @@
-# NOTES
-
 ## 数据管理规范
 
 ### [datahub](https://github.com/biominer-lab/datahub)
