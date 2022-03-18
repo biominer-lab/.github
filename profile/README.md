@@ -1,4 +1,30 @@
-## 数据管理规范
+## BioMiner计划
+致力于打造一套集肿瘤多组学数据管理、分发与探索分析于一体的数据挖掘平台。主要包含以下组成部分：肿瘤多组学数据集、元数据QC & QA系统、标准化分析流程与系统、多组学数据管理系统（类似于Genomics Data Commons）、多组学数据探索分析系统（类似于cBioportal）
+
+## 大致计划
+### 过渡期
+| 所属组成部分 | 软件名称  | 功能描述                  |
+|------------|----------|-------------------------|
+| 肿瘤多组学数据集 | [DataHub (GitHub仓库)](https://github.com/biominer-lab/datahub)  | 肿瘤多组学数据集管理       |
+| 元数据QC & QA系统 | Metabase | 元数据QC/QA |
+| 标准化分析流程与系统 | SeqPipe  | 原名Choppy Pipe, 标准化分析流程管理与运行 |
+| 多组学数据管理系统 | Metabase + BioPoem + NODE/GSA/SRA + OSS | 多组学数据管理，Metabase - 元数据管理；Biopoem - 数据高速传输；NODE/GSA/SRA - Level 1/2数据的存储；OSS - Level3数据的存储; |
+| 多组学数据探索分析系统| cBioportal + [cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | 多组学数据下游分析平台；cBioportal - 探索分析；cBioportal DataHub - 维护符合cBioportal规范要求的数据集 |
+
+
+### 生产期
+
+### 肿瘤多组学数据集
+
+### 元数据QC & QA系统
+
+### 标准化分析流程与系统
+
+### 多组学数据管理系统
+
+### 多组学数据探索分析系统
+
+## 肿瘤多组学数据集
 
 ### [datahub](https://github.com/biominer-lab/datahub)
 Datahub仓库用于管理本组织收集整理的数据集的Metadata及制定的字段规范文档等。
