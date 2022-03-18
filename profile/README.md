@@ -19,8 +19,8 @@
 | 肿瘤多组学数据集 | [DataHub (GitHub仓库)](https://github.com/biominer-lab/datahub)  | 肿瘤多组学数据集管理       |
 | 元数据QC & QA系统 | Metabase | 元数据QC/QA |
 | 标准化分析流程与系统 | SeqPipe  | 原名Choppy Pipe, 标准化分析流程管理与运行 |
-| 多组学数据管理系统 | BioMiner | 多组学数据管理 |
-| 多组学数据探索分析系统| BioMiner  | 多组学数据下游分析 |
+| 多组学数据管理系统 | BioMiner + BioPoem (NODE/GSA/SRA + OSS) | BioMiner - 统一管理所有数据集（类似于GDC）；Biopoem - 数据高速传输；NODE/GSA/SRA - Level 1/2数据的存储；OSS - Level3数据的存储; |
+| 多组学数据探索分析系统| BioMiner  | 多组学数据下游分析，支持两种分析模式：① 在线查询与实时探索分析（类似于cBioportal）；② 统计与机器学习模块； |
 
 ```mermaid
 graph TD
@@ -47,16 +47,18 @@ graph TD
     style AnalysisModules fill:#dafbe1;
 ```
 
-## 平台模块详解
-### 肿瘤多组学数据集
+<!--  
+    ## 平台模块详解
+    ### 肿瘤多组学数据集
 
-### 元数据QC & QA系统
+    ### 元数据QC & QA系统
 
-### 标准化分析流程与系统
+    ### 标准化分析流程与系统
 
-### 多组学数据管理系统
+    ### 多组学数据管理系统
 
-### 多组学数据探索分析系统
+    ### 多组学数据探索分析系统
+-->
 
 ## 肿瘤多组学数据集
 
