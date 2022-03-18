@@ -47,19 +47,6 @@ graph TD
     style AnalysisModules fill:#dafbe1;
 ```
 
-<!--  
-    ## 平台模块详解
-    ### 肿瘤多组学数据集
-
-    ### 元数据QC & QA系统
-
-    ### 标准化分析流程与系统
-
-    ### 多组学数据管理系统
-
-    ### 多组学数据探索分析系统
--->
-
 ## 肿瘤多组学数据集
 
 ### [datahub](https://github.com/biominer-lab/datahub)
