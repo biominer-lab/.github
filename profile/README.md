@@ -79,8 +79,8 @@ SEQC Datahub仓库用于管理本组织收集整理的多组学质量控制相�
 
 ```
 目录说明：
-|- .github/                  -> 存放持续集成与持续发布相关脚本文件，当仓库数据文件更新时触发系统将Metadata自动更新至Metabase
-|- data/                     -> 存放数据集关联的Metadata表格文件（每个项目一个子文件夹，每个子文件夹中包含若干实体描述文件，如project.csv，sample.csv等，具体参考规范文档）
+|- .github/                          -> 存放持续集成与持续发布相关脚本文件，当仓库数据文件更新时触发系统将Metadata自动更新至Metabase
+|- data/                             -> 存放数据集关联的Metadata表格文件（每个项目一个子文件夹，每个子文件夹中包含若干实体描述文件，具体参考规范文档）
 |    |- <标准物质名称>_RNA/
 |    |       |- project/
 |    |       |- donor/
@@ -89,10 +89,10 @@ SEQC Datahub仓库用于管理本组织收集整理的多组学质量控制相�
 |    |       |- library/
 |    |       |- sequencing/
 |    |       |- README.md
-|- docs/                     -> 存放规范文档，含字段声明、管理模式、更新要求等
-|- README.md                 -> 快速指南
-|- CHANGELOG                 -> 数据集版本变更说明
-|- LICENSE                   -> 版权声明文件
+|- docs/                             -> 存放规范文档，含字段声明、管理模式、更新要求等
+|- README.md                         -> 快速指南
+|- CHANGELOG                         -> 数据集版本变更说明
+|- LICENSE                           -> 版权声明文件
 ```
 
 <!--
