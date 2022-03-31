@@ -88,7 +88,9 @@ SEQC Datahub仓库用于管理本组织收集整理的多组学质量控制相�
 |    |       |- reference_materials/
 |    |       |- library/
 |    |       |- sequencing/
+|    |       |- datafile/
 |    |       |- README.md
+|    |       |- CHANGELOG
 |- docs/                             -> 存放规范文档，含字段声明、管理模式、更新要求等
 |- README.md                         -> 快速指南
 |- CHANGELOG                         -> 数据集版本变更说明
