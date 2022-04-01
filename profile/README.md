@@ -1,5 +1,5 @@
-# BioMiner计划
-致力于打造一套集高质量多组学数据管理、分发与探索分析于一体的数据挖掘平台。
+# BioMiner Project
+BioMiner is dedicated to building a data mining platform that integrates high-quality multi-omics data management, distribution and exploratory analysis.
 
 ## For Users
 Please access [the DataHub System](http://datahub.3steps.cn) to analyze and get omics data.
@@ -8,7 +8,7 @@ Please access [the DataHub System](http://datahub.3steps.cn) to analyze and get 
 
 ### [Datahub for The Cancer Omics Atlas](https://github.com/biominer-lab/datahub)
 
-Datahub仓库用于管理本组织收集整理的肿瘤多组学数据集的Metadata及制定的字段规范文档等。
+The Datahub repository is used to manage the metadata and specifications for the TCOA project.
 
 ```
 目录说明：
@@ -28,7 +28,7 @@ Datahub仓库用于管理本组织收集整理的肿瘤多组学数据集的Meta
 
 ### [SEQC DataHub for Quality Control](https://github.com/biominer-lab/seqc-datahub)
 
-SEQC Datahub仓库用于管理本组织收集整理的多组学质量控制相关数据集及制定的数据管理规范文档等
+The SEQC Datahub repository is used to manage the metadata and specifications for the SEQC project.
 
 ```
 目录说明：
@@ -69,15 +69,15 @@ flowchart LR
 
 ## For System Developers
 
-整套系统主要由以下部分组成：肿瘤多组学数据集、元数据QC & QA系统、标准化分析流程与系统、多组学数据管理系统（类似于Genomics Data Commons）、多组学数据探索分析系统（类似于cBioportal）
+The whole system mainly consists of the following parts：Omics Datasets' Repo, Metadata QC & QA System, Workflows & Bioinformatics Workflow Management System, Omics Data Commons(Similar to Genomics Data Commons), A Web Platform for Collaborative Multi-omic Data Visualization and Exploration(Simimar to cBioportal).
 
-| 所属组成部分 | 过渡期 | 生产期 |功能描述|
+| Components | Temporary Solution | Production |Description|
 |------------|:----------:|:------------------:|-------------------------|
-| 多组学数据集 | [TCOA DataHub](https://github.com/biominer-lab/datahub)<br/>[SEQC DataHub](https://github.com/biominer-lab/seqc-datahub)  |   同过渡期   | GitHub仓库，用于Metadata的协作与版本控制|
-| 元数据QC & QA系统 | [Metabase](https://github.com/yjcyxky/metabase)<br/>[Metadata Validator](https://github.com/yjcyxky/metadata-tool) |   同过渡期   |元数据QC/QA |
-| 标准化分析流程与系统 | [ClinicoOmics](https://github.com/yjcyxky/clinico-omics) | 同过渡期 |标准化分析流程管理与运行 |
-| 多组学数据管理系统 | [Metabase](https://github.com/yjcyxky/metabase)<br/>[BioPoem](https://github.com/yjcyxky/biopoem) | [BioMiner](https://github.com/yjcyxky/biominer)<br/>[BioPoem](https://github.com/yjcyxky/biopoem) |Metabase - 多组学数据集相关元数据管理<br/><br/>Biopoem - 数据高速传输(测序公司 ---> 集群 ---> NODE ---> 阿里云/集群)<br/><br/>NODE/GSA/SRA - Level 1/2数据的存储<br/><br/>OSS - Level3数据的存储 |
-| 多组学数据探索分析系统| [cBioportal](https://github.com/yjcyxky/cbioportal)<br/>[cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | BioMiner |cBioportal - 探索分析<br/><br/>cBioportal DataHub - 维护符合cBioportal规范要求的数据集<br/><br/>BioMiner - 多组学数据下游分析，支持两种分析模式：① 在线查询与实时探索分析（类似于cBioportal）② 统计与机器学习模块|
+| Omics Datasets' Repo | [TCOA DataHub](https://github.com/biominer-lab/datahub)<br/>[SEQC DataHub](https://github.com/biominer-lab/seqc-datahub)  |   Same as the Temporary Solution   | GitHub Repo, For Metadata Collaboration and Version Control|
+| Metadata QC & QA System | [Metabase](https://github.com/yjcyxky/metabase)<br/>[Metadata Validator](https://github.com/yjcyxky/metadata-tool) |   Same as the Temporary Solution   | For Metadata QC & QA |
+| Workflows & Bioinformatics Workflow Management System | [ClinicoOmics](https://github.com/yjcyxky/clinico-omics) | Same as the Temporary Solution |For Bioinformatics Workflow Management |
+| Omics Data Commons | [Metabase](https://github.com/yjcyxky/metabase)<br/>[BioPoem](https://github.com/yjcyxky/biopoem) | [BioMiner](https://github.com/yjcyxky/biominer)<br/>[BioPoem](https://github.com/yjcyxky/biopoem) |Metabase - For Metadata Management of the Omics Datasets<br/><br/>Biopoem - For High-speed Data Transfering(Sequencing Center ---> Local HPC ---> NODE ---> AliCloud/Local HPC)<br/><br/>NODE/GSA/SRA - For Level 1/2 Data Files<br/><br/>OSS - For Level3 Data Files |
+| A Web Platform for Collaborative Multi-omic Data Visualization and Exploration | [cBioportal](https://github.com/yjcyxky/cbioportal)<br/>[cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | BioMiner |cBioportal - Omics Data Exploration<br/><br/>cBioportal DataHub - 维护符合cBioportal规范要求的数据集<br/><br/>BioMiner - 多组学数据下游分析，支持两种分析模式：① 在线查询与实时探索分析（类似于cBioportal）② 统计与机器学习模块|
 
 ```mermaid
 graph TD
