@@ -2,7 +2,7 @@
 BioMiner is dedicated to building a data mining platform that integrates high-quality multi-omics data management, distribution and exploratory analysis.
 
 ## For Users
-Please access [the DataHub System](http://biominer.3steps.cn) to analyze and get omics data.
+Please access [the BioMiner System](http://biominer.3steps.cn) to analyze and get omics data.
 
 ## For Dataset Reviewers
 
@@ -11,7 +11,7 @@ Please access [the DataHub System](http://biominer.3steps.cn) to analyze and get
 The DataHub repository is used to manage the metadata and specifications for the TCOA project.
 
 ```
-|- .github                   -> Scripts for Continuous Integration and Delivery (Metadata QA & QC, Syncing the Metadata to BioMiner System)
+|- .github                   -> Scripts for Continuous Integration and Delivery (Metadata QA & QC, Syncing the Metadata to the BioMiner System)
 |- data                      -> Metadata Tables (Each sub directory (named with the project name) contains several metadata tables for every entity, please read the specifications for more details)
 |    |- FUSCC_LUAD
 |    |       |- project/
@@ -30,7 +30,7 @@ The DataHub repository is used to manage the metadata and specifications for the
 The SEQC DataHub repository is used to manage the metadata and specifications for the SEQC project.
 
 ```
-|- .github/                          -> Scripts for Continuous Integration and Delivery (Metadata QA & QC, Syncing the Metadata to BioMiner System)
+|- .github/                          -> Scripts for Continuous Integration and Delivery (Metadata QA & QC, Syncing the Metadata to the BioMiner System)
 |- data/                             -> Metadata Tables (Each sub directory (named with the project name) contains several metadata tables for every entity, please read the specifications for more details)
 |    |- <PROJECT_NAME>_RNA/
 |    |       |- project/
@@ -74,7 +74,7 @@ The whole system mainly consists of the following parts：Omics Datasets' Repo, 
 | Omics Datasets' Repo | [TCOA DataHub](https://github.com/biominer-lab/datahub)<br/>[SEQC DataHub](https://github.com/biominer-lab/seqc-datahub)  |   Same as the Temporary Solution   | GitHub Repo, For Metadata Collaboration and Version Control|
 | Metadata QC & QA System | [Metabase](https://github.com/yjcyxky/metabase)<br/>[Metadata Validator](https://github.com/yjcyxky/metadata-tool) |   Same as the Temporary Solution   | For Metadata QC & QA |
 | Workflows & Bioinformatics Workflow Management System | [ClinicoOmics](https://github.com/yjcyxky/clinico-omics) | Same as the Temporary Solution |For Bioinformatics Workflow Management |
-| Omics Data Commons | [Metabase](https://github.com/yjcyxky/metabase)<br/>[BioPoem](https://github.com/yjcyxky/biopoem) | [BioMiner](https://github.com/yjcyxky/biominer)<br/>[BioPoem](https://github.com/yjcyxky/biopoem) |Metabase - For Metadata Management of the Omics Datasets<br/><br/>Biopoem - For High-speed Data Transfering (Sequencing Center ---> Local HPC ---> NODE ---> AliCloud/Local HPC)<br/><br/>NODE/GSA/SRA - For Level 1/2 Data Files<br/><br/>OSS - For Level3 Data Files |
+| Omics Data Commons | [Metabase](https://github.com/yjcyxky/metabase)<br/>[BioPoem](https://github.com/yjcyxky/biopoem) | [BioMiner](https://github.com/yjcyxky/biominer)<br/>[BioPoem](https://github.com/yjcyxky/biopoem) |Metabase - For Metadata Management of the Omics Datasets<br/><br/>Biopoem - For High-speed Data Transfering (Sequencing Center -> Local HPC -> NODE -> AliCloud/Local HPC)<br/><br/>NODE/GSA/SRA - For Level 1/2 Data Files<br/><br/>OSS - For Level3 Data Files |
 | A Web Platform for Collaborative Multi-omic Data Visualization and Exploration | [cBioportal](https://github.com/yjcyxky/cbioportal)<br/>[cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | BioMiner |cBioportal - Omics Data Exploration<br/><br/>cBioportal DataHub - A centralized location for storing curated data ready for inclusion in cBioPortal.<br/><br/>BioMiner - Support Online Query and Exploration Analysis Modules（Similar to cBioportal, Stats and Machine Learning Modules|
 
 ```mermaid
