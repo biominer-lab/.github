@@ -2,13 +2,13 @@
 BioMiner is dedicated to building a data mining platform that integrates high-quality multi-omics data management, distribution and exploratory analysis.
 
 ## For Users
-Please access [the DataHub System](http://datahub.3steps.cn) to analyze and get omics data.
+Please access [the DataHub System](http://biominer.3steps.cn) to analyze and get omics data.
 
 ## For Dataset Reviewers
 
-### [Datahub for The Cancer Omics Atlas](https://github.com/biominer-lab/datahub)
+### [DataHub for The Cancer Omics Atlas](https://github.com/biominer-lab/datahub)
 
-The Datahub repository is used to manage the metadata and specifications for the TCOA project.
+The DataHub repository is used to manage the metadata and specifications for the TCOA project.
 
 ```
 |- .github                   -> Scripts for Continuous Integration and Delivery (Metadata QA & QC, Syncing the Metadata to BioMiner System)
@@ -27,7 +27,7 @@ The Datahub repository is used to manage the metadata and specifications for the
 
 ### [SEQC DataHub for Quality Control](https://github.com/biominer-lab/seqc-datahub)
 
-The SEQC Datahub repository is used to manage the metadata and specifications for the SEQC project.
+The SEQC DataHub repository is used to manage the metadata and specifications for the SEQC project.
 
 ```
 |- .github/                          -> Scripts for Continuous Integration and Delivery (Metadata QA & QC, Syncing the Metadata to BioMiner System)
