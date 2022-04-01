@@ -73,15 +73,15 @@ flowchart LR
 
 | 所属组成部分 | 过渡期软件系统  | 生产期软件系统 |功能描述                  |
 |------------|----------|------------------|-------------------------|
-| 肿瘤多组学数据集 | [DataHub (GitHub仓库)](https://github.com/biominer-lab/datahub)  | 同过渡期 |肿瘤多组学数据集管理       |
-| 元数据QC & QA系统 | Metabase | 同过渡期 |元数据QC/QA |
+| 多组学数据集 | [TCOA DataHub](https://github.com/biominer-lab/datahub)、[SEQC DataHub](https://github.com/biominer-lab/seqc-datahub)  | 同过渡期 | GitHub仓库，用于Metadata的协作与版本控制       |
+| 元数据QC & QA系统 | Metabase、[Metadata Validator](https://github.com/yjcyxky/metadata-tool) | 同过渡期 |元数据QC/QA |
 | 标准化分析流程与系统 | SeqPipe  | 同过渡期 |原名Choppy Pipe, 标准化分析流程管理与运行 |
-| 多组学数据管理系统 | Metabase + BioPoem + NODE/GSA/SRA + OSS | BioMiner + BioPoem (NODE/GSA/SRA + OSS) |Metabase - 多组学数据集相关元数据管理<br/>Biopoem - 数据高速传输(测序公司 ---> 集群 ---> NODE ---> 阿里云/集群)<br/>NODE/GSA/SRA - Level 1/2数据的存储<br/>OSS - Level3数据的存储 |
-| 多组学数据探索分析系统| cBioportal + [cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | BioMiner |cBioportal - 探索分析<br/>cBioportal DataHub - 维护符合cBioportal规范要求的数据集<br/>BioMiner - 多组学数据下游分析，支持两种分析模式：① 在线查询与实时探索分析（类似于cBioportal）② 统计与机器学习模块|
+| 多组学数据管理系统 | Metabase + [BioPoem](https://github.com/yjcyxky/biopoem) + NODE/GSA/SRA + OSS | BioMiner + BioPoem (NODE/GSA/SRA + OSS) |Metabase - 多组学数据集相关元数据管理<br/><br/>Biopoem - 数据高速传输(测序公司 ---> 集群 ---> NODE ---> 阿里云/集群)<br/><br/>NODE/GSA/SRA - Level 1/2数据的存储<br/><br/>OSS - Level3数据的存储 |
+| 多组学数据探索分析系统| cBioportal + [cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | BioMiner |cBioportal - 探索分析<br/><br/>cBioportal DataHub - 维护符合cBioportal规范要求的数据集<br/><br/>BioMiner - 多组学数据下游分析，支持两种分析模式：① 在线查询与实时探索分析（类似于cBioportal）② 统计与机器学习模块|
 
 ```mermaid
 graph TD
-    subgraph components
+    subgraph BioMiner's Management View
       BioMiner -- Manage <> Similar with GDC --> Metadata[Metadata];
       BioMiner -- Manage <> Similar with cBioportal --> AnalysisModules[Analysis Modules];
       Metadata -.- AnalysisModules;
@@ -93,10 +93,10 @@ graph TD
     SeqSite[Sequencing Center] -- Sync by Biopoem --> HPC[PGx HPC];
     HPC -- Sync by Biopoem --> Level1[Level1 Data - NODE/GSA/SRA];
     Level1 -- Transfer to Cloud Storage by BioPoem & Convert Level1 Data to Level3 Data by SeqPipe  --> Level3;
-    AnalysisModules -- Provides Modules --> DownstreamAnalysis[Downstream Analysis];
-    Info -- Part of Dataset --> Dataset;
-    Level3 -- Part of Dataset --> Dataset;
-    Dataset -- Input Data --> DownstreamAnalysis(Mining Dataset with Several Analysis Modules on BioMiner);
+    AnalysisModules --> DownstreamAnalysis[Downstream Analysis];
+    Info -- Part of Samples' Metadata --> Dataset[New Dataset];
+    Level3 -- Part of Samples --> Dataset;
+    Dataset -- As Input Data --> DownstreamAnalysis(Mining Dataset with Several Analysis Modules on BioMiner);
     DownstreamAnalysis --> Kownledges;
     
     style Level1 fill:#00758f;
