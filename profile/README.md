@@ -1,5 +1,5 @@
 # BioMiner计划
-致力于打造一套集肿瘤多组学数据管理、分发与探索分析于一体的数据挖掘平台。
+致力于打造一套集高质量多组学数据管理、分发与探索分析于一体的数据挖掘平台。
 
 ## For Users
 Please access [the DataHub System](http://datahub.3steps.cn) to analyze and get omics data.
@@ -70,26 +70,14 @@ flowchart LR
 ## For System Developers
 
 整套系统主要由以下部分组成：肿瘤多组学数据集、元数据QC & QA系统、标准化分析流程与系统、多组学数据管理系统（类似于Genomics Data Commons）、多组学数据探索分析系统（类似于cBioportal）
-### 过渡期
 
-| 所属组成部分 | 软件系统  | 功能描述                  |
-|------------|----------|-------------------------|
-| 肿瘤多组学数据集 | [DataHub (GitHub仓库)](https://github.com/biominer-lab/datahub)  | 肿瘤多组学数据集管理       |
-| 元数据QC & QA系统 | Metabase | 元数据QC/QA |
-| 标准化分析流程与系统 | SeqPipe  | 原名Choppy Pipe, 标准化分析流程管理与运行 |
-| 多组学数据管理系统 | Metabase + BioPoem + NODE/GSA/SRA + OSS | 多组学数据管理，Metabase - 元数据管理；Biopoem - 数据高速传输；NODE/GSA/SRA - Level 1/2数据的存储；OSS - Level3数据的存储; |
-| 多组学数据探索分析系统| cBioportal + [cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | cBioportal - 探索分析；cBioportal DataHub - 维护符合cBioportal规范要求的数据集 |
-
-
-### 生产期
-
-| 所属组成部分 | 软件系统  | 功能描述                  |
-|------------|----------|-------------------------|
-| 肿瘤多组学数据集 | [DataHub (GitHub仓库)](https://github.com/biominer-lab/datahub)  | 肿瘤多组学数据集管理       |
-| 元数据QC & QA系统 | Metabase | 元数据QC/QA |
-| 标准化分析流程与系统 | SeqPipe  | 原名Choppy Pipe, 标准化分析流程管理与运行 |
-| 多组学数据管理系统 | BioMiner + BioPoem (NODE/GSA/SRA + OSS) | BioMiner - 统一管理所有数据集（类似于GDC）；Biopoem - 数据高速传输；NODE/GSA/SRA - Level 1/2数据的存储；OSS - Level3数据的存储; |
-| 多组学数据探索分析系统| BioMiner  | 多组学数据下游分析，支持两种分析模式：① 在线查询与实时探索分析（类似于cBioportal）；② 统计与机器学习模块； |
+| 所属组成部分 | 过渡期软件系统  | 生产期软件系统 |功能描述                  |
+|------------|----------|------------------|-------------------------|
+| 肿瘤多组学数据集 | [DataHub (GitHub仓库)](https://github.com/biominer-lab/datahub)  | 同过渡期 |肿瘤多组学数据集管理       |
+| 元数据QC & QA系统 | Metabase | 同过渡期 |元数据QC/QA |
+| 标准化分析流程与系统 | SeqPipe  | 同过渡期 |原名Choppy Pipe, 标准化分析流程管理与运行 |
+| 多组学数据管理系统 | Metabase + BioPoem + NODE/GSA/SRA + OSS | BioMiner + BioPoem (NODE/GSA/SRA + OSS) |Metabase - 多组学数据集相关元数据管理；<br/>Biopoem - 数据高速传输(测序公司 ---> 集群 ---> NODE ---> 阿里云/集群)；<br/>NODE/GSA/SRA - Level 1/2数据的存储；<br/>OSS - Level3数据的存储； |
+| 多组学数据探索分析系统| cBioportal + [cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | BioMiner |cBioportal - 探索分析；<br/>cBioportal DataHub - 维护符合cBioportal规范要求的数据集；<br/>BioMiner - 多组学数据下游分析，支持两种分析模式：① 在线查询与实时探索分析（类似于cBioportal）② 统计与机器学习模块|
 
 ```mermaid
 graph TD
