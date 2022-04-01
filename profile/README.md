@@ -71,7 +71,7 @@ flowchart LR
 
 整套系统主要由以下部分组成：肿瘤多组学数据集、元数据QC & QA系统、标准化分析流程与系统、多组学数据管理系统（类似于Genomics Data Commons）、多组学数据探索分析系统（类似于cBioportal）
 
-| 所属组成部分&nbsp; &nbsp; &nbsp; &nbsp;  | 过渡期软件系统  | 生产期软件系统&nbsp; &nbsp; &nbsp; &nbsp;  |功能描述                  |
+| <div style="width:290px">所属组成部分</div>  | 过渡期软件系统  | 生产期软件系统&nbsp; &nbsp; &nbsp; &nbsp;  |功能描述                  |
 |------------|----------|------------------|-------------------------|
 | 多组学数据集 | [TCOA DataHub](https://github.com/biominer-lab/datahub)、[SEQC DataHub](https://github.com/biominer-lab/seqc-datahub)  | 同过渡期 | GitHub仓库，用于Metadata的协作与版本控制       |
 | 元数据QC & QA系统 | [Metabase](https://github.com/yjcyxky/metabase)、[Metadata Validator](https://github.com/yjcyxky/metadata-tool) | 同过渡期 |元数据QC/QA |
