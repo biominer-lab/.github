@@ -73,8 +73,8 @@ flowchart LR
 
 | 所属组成部分 | 过渡期软件系统 | 生产期软件系统 |功能描述|
 |------------|----------|------------------|-------------------------|
-| 多组学数据集 | [TCOA DataHub](https://github.com/biominer-lab/datahub)、[SEQC DataHub](https://github.com/biominer-lab/seqc-datahub)  | 同过渡期 | GitHub仓库，用于Metadata的协作与版本控制       |
-| 元数据QC & QA系统 | [Metabase](https://github.com/yjcyxky/metabase)、[Metadata Validator](https://github.com/yjcyxky/metadata-tool) | 同过渡期 |元数据QC/QA |
+| 多组学数据集 | [TCOA DataHub](https://github.com/biominer-lab/datahub)、[SEQC DataHub](https://github.com/biominer-lab/seqc-datahub)  |   同过渡期   | GitHub仓库，用于Metadata的协作与版本控制|
+| 元数据QC & QA系统 | [Metabase](https://github.com/yjcyxky/metabase)、[Metadata Validator](https://github.com/yjcyxky/metadata-tool) |   同过渡期   |元数据QC/QA |
 | 标准化分析流程与系统 | [ClinicoOmics](https://github.com/yjcyxky/clinico-omics) | 同过渡期 |标准化分析流程管理与运行 |
 | 多组学数据管理系统 | [Metabase](https://github.com/yjcyxky/metabase) + [BioPoem](https://github.com/yjcyxky/biopoem) | [BioMiner](https://github.com/yjcyxky/biominer) + [BioPoem](https://github.com/yjcyxky/biopoem) |Metabase - 多组学数据集相关元数据管理<br/><br/>Biopoem - 数据高速传输(测序公司 ---> 集群 ---> NODE ---> 阿里云/集群)<br/><br/>NODE/GSA/SRA - Level 1/2数据的存储<br/><br/>OSS - Level3数据的存储 |
 | 多组学数据探索分析系统| [cBioportal](https://github.com/yjcyxky/cbioportal) + [cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)  | BioMiner |cBioportal - 探索分析<br/><br/>cBioportal DataHub - 维护符合cBioportal规范要求的数据集<br/><br/>BioMiner - 多组学数据下游分析，支持两种分析模式：① 在线查询与实时探索分析（类似于cBioportal）② 统计与机器学习模块|
