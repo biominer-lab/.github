@@ -48,7 +48,9 @@ The SEQC DataHub repository is used to manage the metadata and specifications fo
 |- LICENSE                           -> License File
 ```
 
-### [cbioportal-datahub](https://github.com/biominer-lab/cbioportal-datahub)
+### [cBioportal DataHub](https://github.com/biominer-lab/cbioportal-datahub)
+
+A centralized location for storing curated data ready for inclusion in cBioPortal.
 
 ## For Pipeline Developers
 
