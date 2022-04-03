@@ -4,7 +4,7 @@ BioMiner is dedicated to building a data mining platform that integrates high-qu
 ## For Users
 Please access [the BioMiner System](http://biominer.3steps.cn) to analyze and get omics data.
 
-## For Dataset Reviewers
+## For Data Collaborators
 ### Full Lifecycle Management of Metadata
 
 ![Lifecycle](https://raw.githubusercontent.com/biominer-lab/.github/master/profile/lifecycle.png)
