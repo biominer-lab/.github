@@ -7,7 +7,7 @@ Please access [the BioMiner System](http://biominer.3steps.cn) to analyze and ge
 ## For Dataset Reviewers
 ### Full Lifecycle Management of Metadata
 
-![Lifecycle](./lifecycle.png)
+![Lifecycle](./profile/lifecycle.png)
 
 ### [DataHub for The Cancer Omics Atlas](https://github.com/biominer-lab/datahub)
 
